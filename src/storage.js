@@ -8,3 +8,5 @@ export function loadSlots() {
 export function saveSlots(slots) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(slots));
 }
+
+// https://www.youtube.com/@teemurios_code
