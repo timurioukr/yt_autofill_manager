@@ -1,0 +1,16 @@
+{
+  "name": "autoformfiller",
+  "version": "1.0.0",
+  "description": "Розширення для заповнення форм за збереженими даними.",
+  "main": "src/background.js",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0",
+    "vite-plugin-web-extension": "^0.5.0",
+    "vitest": "^0.34.0"
+  }
+}

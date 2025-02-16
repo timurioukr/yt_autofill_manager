@@ -1,0 +1,29 @@
+# Файли Node.js
+node_modules/
+
+# Логи
+logs/
+*.log
+npm-debug.log*
+
+# Кеш
+.cache/
+
+# Вивід збірки
+dist/
+build/
+
+# Файли змінних оточення
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Файли операційної системи
+.DS_Store
+Thumbs.db
+
+# Конфігурація редакторів
+.idea/
+.vscode/ 
