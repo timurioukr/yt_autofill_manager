@@ -1,29 +1,34 @@
-# Файли Node.js
+# Залежності
 node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Збірка
+dist/
+build/
+
+# IDE та редактори
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Локальні файли
+*.local
+.env
+.env.*
 
 # Логи
 logs/
 *.log
-npm-debug.log*
+
+# Тимчасові файли
+.tmp/
+.temp/
 
 # Кеш
 .cache/
-
-# Вивід збірки
-dist/
-build/
-
-# Файли змінних оточення
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Файли операційної системи
-.DS_Store
-Thumbs.db
-
-# Конфігурація редакторів
-.idea/
-.vscode/ 
+.npm/ 

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Autofill Manager</title>
+    <style>
+        body {
+            width: 300px;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+        }
+        .button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .alert {
+            color: red;
+            margin-top: 10px;
+            display: none;
+        }
+        .form-container {
+            display: none;
+        }
+        .input-group {
+            margin: 10px 0;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+        }
+        .delete-btn {
+            color: red;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .slots-list {
+            margin: 10px 0;
+        }
+        .slot-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            border-bottom: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-menu">
+        <button class="button" id="fill-btn">Заповнити</button>
+        <button class="button" id="edit-btn" style="display: none;">Редагувати</button>
+        <button class="button" id="slots-btn">Мої слоти</button>
+        <div id="alert" class="alert">Даних для заповнення не знайдено</div>
+    </div>
+
+    <div id="slots-menu" class="form-container">
+        <h3>Мої слоти</h3>
+        <div id="slots-list" class="slots-list"></div>
+        <button class="button" id="add-slot-btn">Додати слот</button>
+    </div>
+
+    <div id="edit-form" class="form-container">
+        <h3>Редагування даних</h3>
+        <div class="input-group">
+            <input type="text" id="site-url" placeholder="URL сайту">
+        </div>
+        <div id="fields-container"></div>
+        <button class="button" id="add-field-btn">Додати поле</button>
+        <button class="button" id="save-btn">Зберегти</button>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html> 

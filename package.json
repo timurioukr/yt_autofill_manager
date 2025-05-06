@@ -1,16 +1,15 @@
 {
-  "name": "autoformfiller",
+  "name": "yt-autofill-manager",
   "version": "1.0.0",
-  "description": "Розширення для заповнення форм за збереженими даними.",
-  "main": "src/background.js",
+  "description": "Chrome extension for form autofill",
+  "type": "module",
   "scripts": {
-    "dev": "vite build --watch",
-    "build": "vite build",
-    "test": "vitest"
+    "dev": "vite",
+    "build": "vite build && node copy-files.js",
+    "preview": "vite preview"
   },
+  "dependencies": {},
   "devDependencies": {
-    "vite": "^4.0.0",
-    "vite-plugin-web-extension": "^0.5.0",
-    "vitest": "^0.34.0"
+    "vite": "^5.0.0"
   }
 }
